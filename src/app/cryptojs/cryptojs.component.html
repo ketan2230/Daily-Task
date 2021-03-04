@@ -5,9 +5,10 @@
             AES (Encryption)
         </div>
         <div class="card-body">
-            Cipher Key :  <input type="text" placeholder="Salt/Secret"  class="form-control" [(ngModel)]="tokenFromUI" class="token"><br>
+            Cipher Key  :   {{ tokenFromUI }}<br>
             <hr>
-            Encryption :  <input class="input" type="text" placeholder="Enter Data For Encryption" [(ngModel)]="request"><br><br>&nbsp;&nbsp;    
+            Encryption :  <input class="input" type="text" placeholder="Enter Data For Encryption" [(ngModel)]="request" #userinput><br><br>&nbsp;&nbsp;    
+            <!-- <button (click)="copyInputMessage(userinput)" value="click to copy" >Copy</button> -->
             <input type="button" class="btn btn-primary" value="Encrypt" (click)="encryptUsingAES256()"><br>
             <hr>Encrypted Text :  {{ encrypted }}
         </div>

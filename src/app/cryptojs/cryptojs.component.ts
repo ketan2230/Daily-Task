@@ -9,7 +9,7 @@ import * as CryptoJS from 'crypto-js';
 })
 export class CryptojsComponent{
 
-  tokenFromUI: string = "0123456789123456";
+  tokenFromUI: string = "0123456789654321";
   encrypted: any = "";
   decrypted: string;
 
@@ -41,6 +41,13 @@ export class CryptojsComponent{
         mode: CryptoJS.mode.ECB,
         padding: CryptoJS.pad.Pkcs7
       }).toString(CryptoJS.enc.Utf8);
+  }
+
+  copyInputMessage(inputElement){
+    inputElement.select();
+    console.log(inputElement.value);
+    document.execCommand('copy');
+    inputElement.setSelectionRange(0, 0);
   }
 
 }
