@@ -19,6 +19,8 @@ import { CanDeactivateGuard } from './core/services/can-deactivate/can-deactivat
 import { CruiseFormComponent } from './cruise-form/cruise-form.component';
 import { RegistrationDetailsComponent } from './registration-details/registration-details.component';
 import { DataService } from './core/services/registration-detail/data.service';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { DataService } from './core/services/registration-detail/data.service';
     LoginComponent,
     PageNotFoundComponent,
     CruiseFormComponent,
-    RegistrationDetailsComponent
+    RegistrationDetailsComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
