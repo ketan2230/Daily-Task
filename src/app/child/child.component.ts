@@ -1,5 +1,5 @@
-import { Component, OnInit , Input, Output} from '@angular/core';
-import * as EventEmitter from 'events';
+import { Component, OnInit , Input, Output, EventEmitter} from '@angular/core';
+
 
 @Component({
   selector: 'app-child',
@@ -9,7 +9,7 @@ import * as EventEmitter from 'events';
 export class ChildComponent implements OnInit {
 
   //output decorator
-  @Output() public sendData = new EventEmitter();
+  @Output() public sendData = new EventEmitter<string>();
 
   ngOnInit(): void {
     this.sendData.emit('Child Data');
