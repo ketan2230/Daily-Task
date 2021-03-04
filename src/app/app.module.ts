@@ -21,6 +21,7 @@ import { RegistrationDetailsComponent } from './registration-details/registratio
 import { DataService } from './core/services/registration-detail/data.service';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { CryptojsComponent } from './cryptojs/cryptojs.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ChildComponent } from './child/child.component';
     CruiseFormComponent,
     RegistrationDetailsComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    CryptojsComponent
   ],
   imports: [
     BrowserModule,

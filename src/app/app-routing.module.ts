@@ -1,3 +1,4 @@
+import { CryptojsComponent } from './cryptojs/cryptojs.component';
 import { ParentComponent } from './parent/parent.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'page', component: PageComponent },
   { path: 'form', component: CruiseFormComponent },
   { path: 'inputoutput', component: ParentComponent },
+  { path: 'cryptojs', component: CryptojsComponent },
   { path: 'registration-details', component: RegistrationDetailsComponent },
   { path: 'account', loadChildren: () => import('./module/account/account.module').then(m => m.AccountModule), canActivate: [AuthGuardService] },
   { path: 'cms', loadChildren: () => import('./module/cms/cms.module').then(m => m.CmsModule), canActivate: [AuthGuardService] },
