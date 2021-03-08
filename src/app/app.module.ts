@@ -22,6 +22,8 @@ import { DataService } from './core/services/registration-detail/data.service';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { CryptojsComponent } from './cryptojs/cryptojs.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -45,7 +47,8 @@ import { CryptojsComponent } from './cryptojs/cryptojs.component';
     ProductsModule,
     UsersModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [
     UserListService,
