@@ -9,3 +9,33 @@
 - Refference Videos Watch
     - https://youtu.be/U5aeM5dvUpA
     - https://youtu.be/BXHQ5NxU2p8
+
+- Types Of Database in Firebase 
+    - Cloud Firestore :- 
+                            Cloud Firestore is Firebase's newest database for mobile app development. It builds on the successes of the Realtime Database with a new, more intuitive data model. Cloud Firestore also features richer, faster queries and scales further than the Realtime Database.
+
+    - Realtime Database :-
+                            Realtime Database is Firebase's original database. It's an efficient, low-latency solution for mobile apps that require synced states across clients in realtime.
+
+- Database Offers 
+    - Client-first SDKs, with no servers to deploy and maintain
+    - Realtime updates
+    - Free tier, then pay for what you use
+
+- Pros of Firebase 
+    - Database capabilities
+    - Wide number of services
+    - Free start
+    - Concise documentation
+    - Accessible UI and ease of integration
+    - Static hosting capabilities
+
+- cons of Firebase
+    - Firebase Realtime Database limitations
+    - Vendor lock-in
+    - Less support for iOS apps
+    
+- Firebase alternatives
+    - AWS Aurora
+    - Parse servers
+    - Back4App
