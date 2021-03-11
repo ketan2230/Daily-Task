@@ -11,4 +11,4 @@
     - https://medium.com/ngconf/angular-pwa-install-and-configure-858dd8e9fb07
 
 - PWA Tutorial With angular
-    - https://youtu.be/othhfZ0mGjU (Youtube Link)
+    - https://youtu.be/othhfZ0mGjU(Youtube Link)
