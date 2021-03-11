@@ -1,0 +1,19 @@
+<!-- <nav class="navbar navbar-dark bg-dark"></nav> -->
+
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h4>Parent Component</h4>
+        </div>
+        <div class="card-body">
+            Pass Data : <input type="text" class="form-control" [(ngModel)]="parentData">
+            <input type="button" value="Send" (click)="TransferData()" class="btn btn-primary">
+
+            <!-- input Decorator -->
+            <app-child [parentData]="parentData"></app-child>
+
+            <app-child (sendData)="sendData($event)"></app-child>
+            {{ value }} 
+        </div>
+    </div>
+</div>

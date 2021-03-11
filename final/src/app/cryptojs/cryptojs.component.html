@@ -1,0 +1,30 @@
+<br>
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            AES (Encryption)
+        </div>
+        <div class="card-body">
+            Cipher Key  :   {{ tokenFromUI }}<br>
+            <hr>
+            Encryption :  <input class="input" type="text" placeholder="Enter Data For Encryption" [(ngModel)]="request" #userinput><br><br>&nbsp;&nbsp;    
+            <!-- <button (click)="copyInputMessage(userinput)" value="click to copy" >Copy</button> -->
+            <input type="button" class="btn btn-primary" value="Encrypt" (click)="encryptUsingAES256()"><br>
+            <hr>Encrypted Text :  {{ encrypted }}
+        </div>
+    </div>
+</div>
+<br>
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            AES (Decryption)
+        </div>
+        <div class="card-body">
+            
+            Decryption :  <input class="input" type="text" placeholder="Enter data for decrypt" [(ngModel)]="responce"><br><br>
+            <input type="button" class="btn btn-danger" value="Decrypt" (click)="decryptUsingAES256()">&nbsp;<br><hr>
+            Decrypted Text :  {{decrypted}}
+        </div>
+    </div>
+</div>
