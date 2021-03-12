@@ -1,0 +1,11 @@
+1) Types Of Api
+        - Web Api
+        - Open Api
+        - Internal Api
+        - Parter Api
+        - Composite Api
+
+2) API Architectures and Protocols
+        - REST (representational state transfer)
+        - JSON-RPC and XML-RPC
+        - SOAP (simple object access protocol)
