@@ -21,6 +21,9 @@
     - Client-first SDKs, with no servers to deploy and maintain
     - Realtime updates
     - Free tier, then pay for what you use
+    - offline
+    - Accessible from Client Devices
+    - Scale across multiple databases
 
 - Pros of Firebase 
     - Database capabilities
@@ -39,3 +42,11 @@
     - AWS Aurora
     - Parse servers
     - Back4App
+    
+- Difference Between Realtime Database and Firestore
+    - Refference Video :- https://youtu.be/GMJu2aC4AhQ 
+                        - https://youtu.be/KeIx-mArUck
+                        - https://youtu.be/TmXct7seeBY
+                    
+
+    
