@@ -48,5 +48,29 @@
                         - https://youtu.be/KeIx-mArUck
                         - https://youtu.be/TmXct7seeBY
                     
+- how we can deploy site in firebase
+    - Step 1: Install the Firebase CLI
+    - Step 2: Initialize your project
+        - firebase init hosting
+        1. Select a Firebase project to connect to your local project directory.
+        2. Specify a directory to use as your public root directory.
+        3. Choose a configuration for your site.
+    - Step 3: Deploy to your site
+        - firebase deploy --only hosting
 
+- check firebase authentication method and implement email-password authentication method
+    - Types Of Authentication
+        - Email and password based authentication
+        - Federated identity provider integration
+        - Phone number authentication
+        - Custom auth system integration
+        - Anonymous auth
+
+    - How Does It Work?
+        - To sign a user into your app, you first get authentication credentials from the user. These credentials can be the user's email address and password, or an OAuth token from a federated identity provider. Then, you pass these credentials to the Firebase Authentication SDK. Our backend services will then verify those credentials and return a response to the client.
+
+        - After a successful sign in, you can access the user's basic profile information, and you can control the user's access to data stored in other Firebase products. You can also use the provided authentication token to verify the identity of users in your own backend services.
+
+        - Note: By default, authenticated users can read and write data to the Firebase Realtime Database and Cloud Storage. You can control the access of those users by modifying your Firebase Realtime Database and Cloud Storage Security Rules.
+    
     

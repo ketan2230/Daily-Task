@@ -19,5 +19,6 @@ export class ChildComponent implements OnInit {
   @Input() parentData : string ;
 
   //Output Decorator
+  
 
 }
