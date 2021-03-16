@@ -18,11 +18,12 @@ import { ForgotPasswordComponent } from './components/forgot-password/forgot-pas
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component'; 
 import { AuthService } from './shared/services/auth.service';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     RealTimeDatabaseComponent,  
-    CloudFirestoreComponent, DashboardComponent, SignInComponent, SignUpComponent, ForgotPasswordComponent, VerifyEmailComponent
+    CloudFirestoreComponent, DashboardComponent, SignInComponent, SignUpComponent, ForgotPasswordComponent, VerifyEmailComponent, PolicyListComponent
   ],
   imports: [
     BrowserModule,
