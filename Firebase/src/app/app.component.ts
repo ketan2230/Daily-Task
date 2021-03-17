@@ -8,7 +8,7 @@ import { interval } from 'rxjs';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'PWA';
+  title = 'FireBase';
   private readonly publicKey = 'BOAxSQeKdnQKhEpuqX5Ec4jYX-JPHhSaC_wUQp1YKt9ScTvcgAitzwC1dQbdVNSprs64KVzCmgJcEoiOKsi884Y';
 
   constructor(

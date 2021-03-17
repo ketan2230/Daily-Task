@@ -8,7 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';  
 import { AngularFireModule } from '@angular/fire';  
 import { AngularFireDatabaseModule } from '@angular/fire/database';  
-import { AngularFirestoreModule } from '@angular/fire/firestore';  
+import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { RealTimeDatabaseComponent } from './real-time-database/real-time-database.component';  
 import { CloudFirestoreComponent } from './cloud-firestore/cloud-firestore.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
@@ -23,7 +23,12 @@ import { AuthService } from './shared/services/auth.service';
   declarations: [
     AppComponent,
     RealTimeDatabaseComponent,  
-    CloudFirestoreComponent, DashboardComponent, SignInComponent, SignUpComponent, ForgotPasswordComponent, VerifyEmailComponent, PolicyListComponent
+    CloudFirestoreComponent,
+    DashboardComponent,
+    SignInComponent,
+    SignUpComponent,
+    ForgotPasswordComponent,
+    VerifyEmailComponent,
   ],
   imports: [
     BrowserModule,
