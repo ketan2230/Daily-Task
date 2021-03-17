@@ -13,7 +13,7 @@
         </div>
   
         <div class="formGroup">
-          <input type="button" class="btn btnPrimary" value="Sign Up" (click)="authService.registration(userEmail.value, userPwd.value)">
+          <input type="button" class="btn btn-primary" value="Sign Up" (click)="authService.registration(userEmail.value, userPwd.value)">
         </div>
   
         <div class="formGroup">
@@ -22,8 +22,8 @@
   
         <!-- Continue with Google -->
         <div class="formGroup">
-          <button type="button" class="btn googleBtn" >
-            <i class="fab fa-google-plus-g"></i>
+          <button type="button" class="btn googleBtn" (click)="authService.googleAuth()">
+            <i class="fa fa-google-plus-g"></i>
             Continue with Google
           </button>
         </div>

@@ -54,6 +54,7 @@ export class AuthService {
 
   // Sign in with Google
   googleAuth() {
+    console.log("Enter In Google Method");
     return this.AuthLogin(new firebase.auth.GoogleAuthProvider());
   }
 
@@ -61,7 +62,7 @@ export class AuthService {
   AuthLogin(provider) {
     return this.afAuth.signInWithPopup(provider)
       .then((result) => {
-        this.router.navigate(['home']);
+        this.router.navigate(['dashboard']);
         this.setUserData(result.user);
       }).catch(error => {
         console.log(error)
@@ -73,7 +74,7 @@ export class AuthService {
     return this.afAuth.signOut()
       .then(() => {
         localStorage.removeItem('user');
-        this.router.navigate(['home']);
+        this.router.navigate(['dashboard']);
       })
   }
 
@@ -125,7 +126,6 @@ export class AuthService {
       displayName: user.displayName,
       photoURL: user.photoURL,
       emailVerified: user.emailVerified
-      //aa upar ni line add kari me
     }
     return userRef.set(userData, {
       merge: true
