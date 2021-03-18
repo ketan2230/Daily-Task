@@ -1,5 +1,7 @@
+import { AngularFireMessagingModule } from '@angular/fire/messaging';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
@@ -17,6 +19,9 @@ import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component'; 
 import { AuthService } from './shared/services/auth.service';
+import { MessagingService } from './shared/services/messaging.service';
+import { AsyncPipe } from '@angular/common';
+import { FirebaseNotificationComponent } from './components/firebase-notification/firebase-notification.component';
 
 
 @NgModule({
@@ -29,18 +34,21 @@ import { AuthService } from './shared/services/auth.service';
     SignUpComponent,
     ForgotPasswordComponent,
     VerifyEmailComponent,
+    FirebaseNotificationComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,  
     HttpClientModule,  
+    AngularFireMessagingModule,
     AngularFireModule.initializeApp(environment.firebase),  
     AngularFireDatabaseModule,  
     AngularFirestoreModule  ,
+    AngularFireDatabaseModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
-  providers: [AngularFireModule, AuthService],
+  providers: [AngularFireModule, AuthService, MessagingService,AsyncPipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

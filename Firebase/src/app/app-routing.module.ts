@@ -1,3 +1,4 @@
+import { FirebaseNotificationComponent } from './components/firebase-notification/firebase-notification.component';
 import { RealTimeDatabaseComponent } from '../app/real-time-database/real-time-database.component';
 import { NgModule } from '@angular/core';
 // Required services for navigation
@@ -14,6 +15,7 @@ import { VerifyEmailComponent } from '../app/components/verify-email/verify-emai
 const routes: Routes = [
   { path: '', redirectTo: '/sign-in', pathMatch: 'full'},
   { path: 'sign-in', component: SignInComponent },
+  { path: 'firebase-notification', component: FirebaseNotificationComponent },
   { path: 'register-user', component: SignUpComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'forgot-password', component: ForgotPasswordComponent },
