@@ -51,6 +51,7 @@
 - how we can deploy site in firebase
     - Step 1: Install the Firebase CLI
     - Step 2: Initialize your project
+        - firebase login
         - firebase init hosting
         1. Select a Firebase project to connect to your local project directory.
         2. Specify a directory to use as your public root directory.
