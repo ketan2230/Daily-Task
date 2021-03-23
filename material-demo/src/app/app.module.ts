@@ -40,6 +40,10 @@ import { ButtontoggleComponent } from './buttontoggle/buttontoggle.component';
 import { CardComponent } from './card/card.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
 import { TextFieldComponent } from './text-field/text-field.component';
+import { UserDetailsComponent } from './module/user/user-details/user-details.component';
+import { AccountDetailsComponent } from './module/account/account-details/account-details.component';
+
+
 
 
 @NgModule({
@@ -51,6 +55,8 @@ import { TextFieldComponent } from './text-field/text-field.component';
     CardComponent,
     CheckboxComponent,
     TextFieldComponent,
+    UserDetailsComponent,
+    AccountDetailsComponent
     
   ],
   imports: [
