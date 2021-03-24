@@ -1,3 +1,4 @@
+import { DividerComponent } from './divider/divider.component';
 import { UserDetailsComponent } from './module/user/user-details/user-details.component';
 import { TextFieldComponent } from './text-field/text-field.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'button', component: ButtonComponent },
   { path: 'bedge', component: BedgeComponent },
   { path: 'card', component: CardComponent},
+  { path: 'divider', component: DividerComponent},
   { path: 'user', component: UserDetailsComponent},
   { path: 'textfield', component: TextFieldComponent},
   { path: 'checkbox', component: CheckboxComponent},

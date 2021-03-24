@@ -42,6 +42,8 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
 import { TextFieldComponent } from './text-field/text-field.component';
 import { UserDetailsComponent } from './module/user/user-details/user-details.component';
 import { AccountDetailsComponent } from './module/account/account-details/account-details.component';
+import { DividerComponent } from './divider/divider.component';
+// import { GridListComponent } from './gridlist/gridlist.component';
 
 
 
@@ -56,7 +58,9 @@ import { AccountDetailsComponent } from './module/account/account-details/accoun
     CheckboxComponent,
     TextFieldComponent,
     UserDetailsComponent,
-    AccountDetailsComponent
+    AccountDetailsComponent,
+    DividerComponent,
+    // GridListComponent
     
   ],
   imports: [
@@ -81,7 +85,7 @@ import { AccountDetailsComponent } from './module/account/account-details/accoun
     MatToolbarModule,
     MatListModule,
     MatGridListModule,
-    MatCardModule,
+    MatCardModule,  
     MatStepperModule,
     MatTabsModule,
     MatExpansionModule,
@@ -93,7 +97,7 @@ import { AccountDetailsComponent } from './module/account/account-details/accoun
     MatDialogModule,
     MatTooltipModule,
     MatSnackBarModule,
-    MatTableModule,
+    MatTableModule, 
     MatSortModule,
     MatPaginatorModule
   ],
