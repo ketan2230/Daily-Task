@@ -43,7 +43,14 @@ import { TextFieldComponent } from './text-field/text-field.component';
 import { UserDetailsComponent } from './module/user/user-details/user-details.component';
 import { AccountDetailsComponent } from './module/account/account-details/account-details.component';
 import { DividerComponent } from './divider/divider.component';
-// import { GridListComponent } from './gridlist/gridlist.component';
+import { GridListComponent } from './grid-list/grid-list.component';
+import { AutocompleteComponent } from './autocomplete/autocomplete.component';
+import { ListComponent } from './list/list.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { MenuComponent } from './menu/menu.component';
+import { ProgressBarComponent } from './progress-bar/progress-bar.component';
+import { PaginatorComponent } from './paginator/paginator.component';
+import { SidenavComponent } from './sidenav/sidenav.component'; 
 
 
 
@@ -60,6 +67,14 @@ import { DividerComponent } from './divider/divider.component';
     UserDetailsComponent,
     AccountDetailsComponent,
     DividerComponent,
+    GridListComponent,
+    AutocompleteComponent,
+    ListComponent,
+    NavbarComponent,
+    MenuComponent,
+    ProgressBarComponent,
+    PaginatorComponent,
+    SidenavComponent,
     // GridListComponent
     
   ],

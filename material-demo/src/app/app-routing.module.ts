@@ -1,3 +1,10 @@
+import { PaginatorComponent } from './paginator/paginator.component';
+import { ProgressBarComponent } from './progress-bar/progress-bar.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { MenuComponent } from './menu/menu.component';
+import { AutocompleteComponent } from './autocomplete/autocomplete.component';
+import { GridListComponent } from './grid-list/grid-list.component';
 import { DividerComponent } from './divider/divider.component';
 import { UserDetailsComponent } from './module/user/user-details/user-details.component';
 import { TextFieldComponent } from './text-field/text-field.component';
@@ -8,13 +15,22 @@ import { BedgeComponent } from './bedge/bedge.component';
 import { ButtonComponent } from './button/button.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ListComponent } from './list/list.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: '/button', pathMatch: 'full'},
+  { path: '', redirectTo: '/navbar', pathMatch: 'full'},
   { path: 'button', component: ButtonComponent },
-  { path: 'bedge', component: BedgeComponent },
+  { path: 'bedge', component: BedgeComponent},
   { path: 'card', component: CardComponent},
+  { path: 'list', component: ListComponent},
+  { path: 'paginator', component: PaginatorComponent},
+  { path: 'progressbar', component: ProgressBarComponent},
+  { path: 'sidenav', component: SidenavComponent},
+  { path: 'navbar', component: NavbarComponent},
+  { path: 'menu', component: MenuComponent},
+  { path: 'autocomplete', component: AutocompleteComponent},
+  { path: 'gridlist', component: GridListComponent},
   { path: 'divider', component: DividerComponent},
   { path: 'user', component: UserDetailsComponent},
   { path: 'textfield', component: TextFieldComponent},
