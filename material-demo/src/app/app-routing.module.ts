@@ -1,3 +1,7 @@
+import { DialogComponent } from './dialog/dialog.component';
+import { DatepickerComponent } from './datepicker/datepicker.component';
+import { ChipsComponent } from './chips/chips.component';
+import { OtherComponent } from './other/other.component';
 import { PaginatorComponent } from './paginator/paginator.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
@@ -16,6 +20,7 @@ import { ButtonComponent } from './button/button.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ListComponent } from './list/list.component';
+import { BottomsheetComponent } from './bottomsheet/bottomsheet.component';
 
 
 const routes: Routes = [
@@ -23,7 +28,12 @@ const routes: Routes = [
   { path: 'button', component: ButtonComponent },
   { path: 'bedge', component: BedgeComponent},
   { path: 'card', component: CardComponent},
+  // { path: 'dialog', component: DialogComponent},
   { path: 'list', component: ListComponent},
+  { path: 'chips', component: ChipsComponent},
+  { path: 'datepicker', component: DatepickerComponent},
+  { path: 'bottomsheet', component: BottomsheetComponent},
+  { path: 'other', component: OtherComponent},
   { path: 'paginator', component: PaginatorComponent},
   { path: 'progressbar', component: ProgressBarComponent},
   { path: 'sidenav', component: SidenavComponent},

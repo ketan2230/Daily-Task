@@ -50,7 +50,13 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MenuComponent } from './menu/menu.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { PaginatorComponent } from './paginator/paginator.component';
-import { SidenavComponent } from './sidenav/sidenav.component'; 
+import { SidenavComponent } from './sidenav/sidenav.component';
+import { OtherComponent } from './other/other.component';
+import { BottomsheetComponent } from './bottomsheet/bottomsheet.component';
+import { BottomSheetOverviewExampleComponent } from './bottomsheet/bottom-sheet-overview-example/bottom-sheet-overview-example.component';
+import { ChipsComponent } from './chips/chips.component';
+import { DatepickerComponent } from './datepicker/datepicker.component';
+import { DialogComponent } from './dialog/dialog.component'; 
 
 
 
@@ -75,6 +81,12 @@ import { SidenavComponent } from './sidenav/sidenav.component';
     ProgressBarComponent,
     PaginatorComponent,
     SidenavComponent,
+    OtherComponent,
+    BottomsheetComponent,
+    BottomSheetOverviewExampleComponent,
+    ChipsComponent,
+    DatepickerComponent,
+    DialogComponent,
     // GridListComponent
     
   ],
