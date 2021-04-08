@@ -1,5 +1,6 @@
 <template>
     <div>
+        <Home name='Khodidas' :like='50' />
 
         <!-- show form daat -->
         <div>
@@ -36,7 +37,7 @@
                 <input 
                     type="number" 
                     id="phoneNumber" 
-                    v-model.trim.number="formData.phoneNo">
+                    v-model.trim.number.lazy="formData.phoneNo">
             </div>
 
             <!-- position -->
@@ -84,8 +85,12 @@
 </template>
 
 <script>
+import Home from './Home'
 export default {
     name: 'Form',
+    components: {
+        Home,
+    },
     data() {
         return {
             formData: {
@@ -113,7 +118,6 @@ export default {
 <style scoped>
 div {
     margin: 20px auto;
-    text-align: left;
 }
 #firstName, 
 #lastName, 
@@ -124,5 +128,6 @@ div {
 }
 label {
     display: flex;
+    justify-content: center;
 }
 </style>
